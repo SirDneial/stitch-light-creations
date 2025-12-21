@@ -19,6 +19,7 @@ const buttonVariants = cva(
         sage: "bg-sage text-primary-foreground hover:opacity-90 shadow-sm hover:shadow-md",
         "sage-outline": "border-2 border-sage bg-transparent text-sage hover:bg-sage hover:text-primary-foreground",
         pink: "bg-pink text-foreground hover:bg-pink/80 shadow-sm",
+        "pink-outline": "border-2 border-pink bg-transparent text-pink hover:bg-pink hover:text-foreground",
         yellow: "bg-yellow text-foreground hover:bg-yellow/80 shadow-sm",
         hero: "bg-sage text-primary-foreground hover:opacity-90 shadow-md hover:shadow-lg text-base font-semibold tracking-wide",
         "hero-outline": "border-2 border-sage bg-card/80 backdrop-blur-sm text-sage hover:bg-sage hover:text-primary-foreground text-base font-semibold tracking-wide",
