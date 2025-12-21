@@ -8,10 +8,10 @@ import sample4 from "@/assets/embroidery-sample-4.jpg";
 
 const Gallery = () => {
   const images = [
-    { src: sample1, alt: "Custom monogram embroidery on linen fabric" },
-    { src: sample2, alt: "Embroidered baby onesie with floral design" },
-    { src: sample3, alt: "Custom embroidered tote bag with quote" },
-    { src: sample4, alt: "Embroidered sweatshirt neckline with custom letters" },
+    { src: sample1, alt: "Stitch the Light booth at local craft market with handmade goods" },
+    { src: sample2, alt: "Packaged handmade bow with gingham ribbon and Stitch the Light branding" },
+    { src: sample3, alt: "Handmade quilted knot bag with floral fabric and velvet bow" },
+    { src: sample4, alt: "Custom UGA sweatshirt with appliqué letters and pink gingham pennant" },
   ];
 
   return (
@@ -61,7 +61,7 @@ const Gallery = () => {
           ))}
         </div>
 
-        {/* Instagram CTA */}
+        {/* Social CTAs */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -70,19 +70,34 @@ const Gallery = () => {
           className="text-center"
         >
           <p className="font-body text-muted-foreground mb-4">
-            See more of my work on Instagram
+            See more of my work on social media
           </p>
-          <Button variant="sage-outline" size="lg" asChild>
-            <a
-              href="https://instagram.com/stitchthelight"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2"
-            >
-              <Instagram size={20} />
-              @stitchthelight
-            </a>
-          </Button>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Button variant="sage-outline" size="lg" asChild>
+              <a
+                href="https://instagram.com/stitchthelight"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <Instagram size={20} />
+                @stitchthelight
+              </a>
+            </Button>
+            <Button variant="pink-outline" size="lg" asChild>
+              <a
+                href="https://www.tiktok.com/@stitchthelight"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+                @stitchthelight
+              </a>
+            </Button>
+          </div>
         </motion.div>
       </div>
     </section>
